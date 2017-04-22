@@ -1,0 +1,771 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>appdmg (v0.4.5)</a>
+</h1>
+<h4></h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.appdmg">module appdmg</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline">
+            function <span class="apidocSignatureSpan">appdmg.</span>pipeline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">appdmg.</span>colors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">appdmg.</span>legacy</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">appdmg.</span>pipeline.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.appdmg.colors">module appdmg.colors</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.black">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>black
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.blue">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>blue
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.cyan">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>cyan
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.green">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>green
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.purple">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>purple
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.red">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>red
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.white">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>white
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.colors.yellow">
+            function <span class="apidocSignatureSpan">appdmg.colors.</span>yellow
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.appdmg.legacy">module appdmg.legacy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.legacy.convert">
+            function <span class="apidocSignatureSpan">appdmg.legacy.</span>convert
+            <span class="apidocSignatureSpan">(src)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.appdmg.pipeline">module appdmg.pipeline</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.pipeline">
+            function <span class="apidocSignatureSpan">appdmg.</span>pipeline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.appdmg.pipeline.prototype">module appdmg.pipeline.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype._progress">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>_progress
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype._run">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>_run
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype._runStep">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>_runStep
+            <span class="apidocSignatureSpan">(step, nextAction, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype.addCleanupStep">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>addCleanupStep
+            <span class="apidocSignatureSpan">(id, title, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype.addStep">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>addStep
+            <span class="apidocSignatureSpan">(title, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype.expectAdditional">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>expectAdditional
+            <span class="apidocSignatureSpan">(n)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype.run">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>run
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype.runCleanup">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>runCleanup
+            <span class="apidocSignatureSpan">(id, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.appdmg.pipeline.prototype.runRemainingCleanups">
+            function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>runRemainingCleanups
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.appdmg" id="apidoc.module.appdmg">module appdmg</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline" id="apidoc.element.appdmg.pipeline">
+        function <span class="apidocSignatureSpan">appdmg.</span>pipeline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pipeline = function () {
+  this.ee = null
+  this.steps = []
+  this.totalSteps = 0
+  this.currentStep = 0
+
+  this.cleanupList = []
+  this.cleanupStore = {}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.appdmg.colors" id="apidoc.module.appdmg.colors">module appdmg.colors</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.black" id="apidoc.element.appdmg.colors.black">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>black
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">black = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.blue" id="apidoc.element.appdmg.colors.blue">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>blue
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blue = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.cyan" id="apidoc.element.appdmg.colors.cyan">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>cyan
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cyan = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.green" id="apidoc.element.appdmg.colors.green">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>green
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">green = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.purple" id="apidoc.element.appdmg.colors.purple">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>purple
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">purple = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.red" id="apidoc.element.appdmg.colors.red">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>red
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">red = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.white" id="apidoc.element.appdmg.colors.white">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>white
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">white = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.colors.yellow" id="apidoc.element.appdmg.colors.yellow">
+        function <span class="apidocSignatureSpan">appdmg.colors.</span>yellow
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">yellow = function (text) {
+  return colors[key] + text + reset
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.appdmg.legacy" id="apidoc.module.appdmg.legacy">module appdmg.legacy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.legacy.convert" id="apidoc.element.appdmg.legacy.convert">
+        function <span class="apidocSignatureSpan">appdmg.legacy.</span>convert
+        <span class="apidocSignatureSpan">(src)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function convert(src) {
+  var obj = {}
+
+  obj.title = src.title
+  obj.icon = src.icon
+  obj.background = src.background
+
+  obj['icon-size'] = src.icons.size
+
+  obj.contents = [
+    { x: src.icons.alias[0], y: src.icons.alias[1], type: 'link', path: '/Applications' },
+    { x: src.icons.app[0], y: src.icons.app[1], type: 'file', path: src.app }
+  ]
+
+  var extra = (src.extra || [])
+  extra.forEach(function (e) {
+    obj.contents.push({
+      x: e[1],
+      y: e[2],
+      type: 'file',
+      path: e[0]
+    })
+  })
+
+  return obj
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.appdmg.pipeline" id="apidoc.module.appdmg.pipeline">module appdmg.pipeline</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.pipeline" id="apidoc.element.appdmg.pipeline.pipeline">
+        function <span class="apidocSignatureSpan">appdmg.</span>pipeline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pipeline = function () {
+  this.ee = null
+  this.steps = []
+  this.totalSteps = 0
+  this.currentStep = 0
+
+  this.cleanupList = []
+  this.cleanupStore = {}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.appdmg.pipeline.prototype" id="apidoc.module.appdmg.pipeline.prototype">module appdmg.pipeline.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype._progress" id="apidoc.element.appdmg.pipeline.prototype._progress">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>_progress
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_progress = function (obj) {
+  obj.current = this.currentStep
+  obj.total = this.totalSteps
+
+  this.ee.emit('progress', obj)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+Pipeline.prototype._runStep = function (step, nextAction, cb) {
+var that = this
+
+var next = function (err) {
+  if (err) {
+    that.<span class="apidocCodeKeywordSpan">_progress</span>({ type: 'step-end', status: 'error' })
+    that.runRemainingCleanups(function (err2) {
+      if (err2) console.error(err2)
+      cb(err)
+    })
+  } else {
+    that._progress({ type: 'step-end', status: 'ok' })
+    that[nextAction](cb)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype._run" id="apidoc.element.appdmg.pipeline.prototype._run">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>_run
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_run = function (cb) {
+  if (this.steps.length === 0) return this.runRemainingCleanups(cb)
+
+  var step = this.steps.shift()
+
+  this._runStep(step, '_run', cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype._runStep" id="apidoc.element.appdmg.pipeline.prototype._runStep">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>_runStep
+        <span class="apidocSignatureSpan">(step, nextAction, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_runStep = function (step, nextAction, cb) {
+  var that = this
+
+  var next = function (err) {
+    if (err) {
+      that._progress({ type: 'step-end', status: 'error' })
+      that.runRemainingCleanups(function (err2) {
+        if (err2) console.error(err2)
+        cb(err)
+      })
+    } else {
+      that._progress({ type: 'step-end', status: 'ok' })
+      that[nextAction](cb)
+    }
+  }
+
+  next.skip = function () {
+    that._progress({ type: 'step-end', status: 'skip' })
+    that[nextAction](cb)
+  }
+
+  that.currentStep++
+  that._progress({ type: 'step-begin', title: step.title })
+  step.fn(next)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var id = that.cleanupList[idx]
+
+var step = {
+  title: that.cleanupStore[id].title,
+  fn: function (cb) { that.runCleanup(id, cb) }
+}
+
+that.<span class="apidocCodeKeywordSpan">_runStep</span>(step, 'runRemainingCleanups', cb)
+}
+
+Pipeline.prototype._run = function (cb) {
+if (this.steps.length === 0) return this.runRemainingCleanups(cb)
+
+var step = this.steps.shift()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype.addCleanupStep" id="apidoc.element.appdmg.pipeline.prototype.addCleanupStep">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>addCleanupStep
+        <span class="apidocSignatureSpan">(id, title, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addCleanupStep = function (id, title, fn) {
+  this.cleanupList.push(id)
+  this.cleanupStore[id] = { title: title, fn: fn }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype.addStep" id="apidoc.element.appdmg.pipeline.prototype.addStep">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>addStep
+        <span class="apidocSignatureSpan">(title, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addStep = function (title, fn) {
+  this.totalSteps++
+  this.steps.push({ title: title, fn: fn })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype.expectAdditional" id="apidoc.element.appdmg.pipeline.prototype.expectAdditional">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>expectAdditional
+        <span class="apidocSignatureSpan">(n)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">expectAdditional = function (n) {
+  this.totalSteps += n
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype.run" id="apidoc.element.appdmg.pipeline.prototype.run">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>run
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">run = function () {
+  var ee = new events.EventEmitter()
+  this.ee = ee
+
+  process.nextTick(this._run.bind(this, function (err) {
+    if (err) {
+      ee.emit('error', err)
+    } else {
+      ee.emit('finish')
+    }
+  }))
+
+  return ee
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype.runCleanup" id="apidoc.element.appdmg.pipeline.prototype.runCleanup">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>runCleanup
+        <span class="apidocSignatureSpan">(id, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">runCleanup = function (id, cb) {
+  var fn = this.cleanupStore[id].fn
+  var idx = this.cleanupList.indexOf(id)
+
+  if (idx === -1) throw new Error('No step with id: ' + id)
+
+  delete this.cleanupStore[id]
+  this.cleanupList.splice(idx, 1)
+
+  return fn(cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var that = this
+var idx = that.cleanupList.length - 1
+var id = that.cleanupList[idx]
+
+var step = {
+  title: that.cleanupStore[id].title,
+  fn: function (cb) { that.<span class="apidocCodeKeywordSpan">runCleanup</span>(id, cb) }
+}
+
+that._runStep(step, 'runRemainingCleanups', cb)
+}
+
+Pipeline.prototype._run = function (cb) {
+if (this.steps.length === 0) return this.runRemainingCleanups(cb)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.appdmg.pipeline.prototype.runRemainingCleanups" id="apidoc.element.appdmg.pipeline.prototype.runRemainingCleanups">
+        function <span class="apidocSignatureSpan">appdmg.pipeline.prototype.</span>runRemainingCleanups
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">runRemainingCleanups = function (cb) {
+  if (this.cleanupList.length === 0) return cb(null)
+
+  var that = this
+  var idx = that.cleanupList.length - 1
+  var id = that.cleanupList[idx]
+
+  var step = {
+    title: that.cleanupStore[id].title,
+    fn: function (cb) { that.runCleanup(id, cb) }
+  }
+
+  that._runStep(step, 'runRemainingCleanups', cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Pipeline.prototype._runStep = function (step, nextAction, cb) {
+var that = this
+
+var next = function (err) {
+  if (err) {
+    that._progress({ type: 'step-end', status: 'error' })
+    that.<span class="apidocCodeKeywordSpan">runRemainingCleanups</span>(function (err2) {
+      if (err2) console.error(err2)
+      cb(err)
+    })
+  } else {
+    that._progress({ type: 'step-end', status: 'ok' })
+    that[nextAction](cb)
+  }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
